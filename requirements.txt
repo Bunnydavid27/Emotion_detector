@@ -7,5 +7,4 @@ matplotlib
 joblib
 altair 
 datetime
-base64
 sklearn
