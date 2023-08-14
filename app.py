@@ -15,7 +15,7 @@ from sklearn.metrics import accuracy_score
 
 
 
-pipe_logreg = joblib.load(open('App\Models\emotion_det_lr_pipe.pkl','rb'))
+pipe_logreg = joblib.load(open(r'App\Models\emotion_det_lr_pipe.pkl','rb'))
 
 def predict_emotions(docx):
     results = pipe_logreg.predict([docx])
@@ -49,7 +49,7 @@ def add_bg_from_local(image_file):
 def main():
     st.title("Text Emotion Detector", )
     menu = ["Home", "About"]
-    add_bg_from_local('App\Emoji.jpg') 
+    add_bg_from_local(r'App\Emoji.jpg') 
     choice = st.sidebar.selectbox("Menu",menu)
     if choice == "Home":
         st.markdown(f'<h1 style="color:brown;font-size:25px;"> Home - Emotion Detector </h1>', unsafe_allow_html=True)
