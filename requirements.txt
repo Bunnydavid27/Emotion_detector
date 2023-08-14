@@ -7,4 +7,4 @@ matplotlib
 joblib
 altair 
 datetime
-sklearn
+scikit-learn
