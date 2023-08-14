@@ -5,7 +5,6 @@ numpy
 neattext
 matplotlib
 joblib
-threading 
 altair 
 datetime
 base64
